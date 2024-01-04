@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="./styles.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Sign Up</h1>
+  <!-- Add Sign Up Form Here -->
+  <!-- To complete this lab, create a sign up form with the following fields:
+
+Name
+Email
+Password
+Confirm password
+A checkbox for receiving email updates
+Submitting the form should check that the passwords match. If the passwords match, 
+console log the values from each of the fields. If the passwords don't match, 
+display an alert() with an error message. Make sure that the web page doesn't reload after submitting 
+the form. -->
+  <form id="itemForm">
+    <div class="form-input__container">
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Your name" id="name" required>
+    </div>
+    <div class="form-input__container">
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Your email" id="email" required>
+    </div>
+    <div class="form-input__container">
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Input password" id="password" required>
+    </div>
+    <div class="form-input__container">
+      <label>Confirm Password</label>
+      <input type="password" name="confirmPassword" placeholder="Confirm your password" required>
+    </div>
+    <div class="form-input__container">
+      <input type="checkbox" name="subscribeEmails" id="checkbox">
+      <label>Subscribe to receiving all email updates</label>
+    </div>    
+    <div class="form-input__container">
+      <button type="submit"> Sign Up </button>
+    </div>
+  </form>
+</body>
+</html>
